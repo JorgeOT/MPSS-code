@@ -450,7 +450,7 @@ LineText = '** ELEMENT CONTROLS';
 fprintf(fileID, '%s\r\n', LineText);
 LineText = '** '; 
 fprintf(fileID, '%s\r\n', LineText);
-LineText = strcat('*Section Controls, name=EC-1, ELEMENT DELETION=YES, KINEMATICS=AVERAGE STRAIN, VISCOSITY=',num2str(Viscosity)); 
+LineText = strcat('*Section Controls, name=EC-1, ELEMENT DELETION=YES, MAX DEGRADATION=0.95, KINEMATICS=AVERAGE STRAIN, VISCOSITY=',num2str(Viscosity)); 
 fprintf(fileID, '%s\r\n', LineText);
 LineText = '1., 1., 1.'; 
 fprintf(fileID, '%s\r\n', LineText);
